@@ -2,31 +2,86 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My Profile</title>
+  <title>Surya | Profile</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <div class="profile-card">
-    <img src="surya photo.jpg" alt="Profile Image">
+  <button id="themeToggle">🌙</button>
 
-    <h2>Surya</h2>
-    <p class="role">Front End Developer (Fresher)</p>
-
-    <p class="about">
-      I like building clean and simple websites using HTML, CSS and JavaScript.
+  <header>
+    <h1 id="typing"></h1>
+    <p>Front End Developer | Fresher</p>
+  </header>
+  <section>
+    <h2>About Me</h2>
+    <p>
+      I am a Front End Developer fresher with hands-on experience in HTML, CSS,
+      and JavaScript. I enjoy creating clean, responsive websites and I’m
+      currently learning React.
     </p>
+  </section>
 
-    <div class="skills">
+  <section>
+    <h2>Skills</h2>
+
+    <div class="skill">
       <span>HTML</span>
-      <span>CSS</span>
-      <span>JavaScript</span>
-      <span>GitHub</span>
+      <div class="bar"><div class="fill html"></div></div>
     </div>
 
-    <button id="contactBtn">Contact Me</button>
-    <p id="msg"></p>
-  </div>
+    <div class="skill">
+      <span>CSS</span>
+      <div class="bar"><div class="fill css"></div></div>
+    </div>
+
+    <div class="skill">
+      <span>JavaScript</span>
+      <div class="bar"><div class="fill js"></div></div>
+    </div>
+
+    <div class="skill">
+      <span>GitHub</span>
+      <div class="bar"><div class="fill git"></div></div>
+    </div>
+  </section>
+
+  
+  <section>
+    <h2>Projects</h2>
+
+    <div class="project">
+      <h3>Profile Website</h3>
+      <p>Personal profile built using HTML, CSS and JavaScript.</p>
+    </div>
+
+    <div class="project">
+      <h3>calculator</h3>
+      <p>Developed a simple and interactive calculator application using HTML, CSS, and JavaScript.</p>
+    </div>
+
+    <div class="project">
+      <h3>Weather</h3>
+      <p>Built a weather application using HTML, CSS, and JavaScript that allows users to search weather information by city name.</p>
+    </div>
+  </section>
+
+  
+  <section>
+    <h2>Contact Me</h2>
+
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Your Name">
+      <input type="email" id="email" placeholder="Your Email">
+      <textarea id="message" placeholder="Your Message"></textarea>
+      <button type="submit">Send</button>
+      <p id="formMsg"></p>
+    </form>
+  </section>
+
+  <section class="resume">
+    <a href="M SuryaPrakash  Resume.pdf" download>Download Resume</a>
+  </section>
 
   <script src="script.js"></script>
 </body>

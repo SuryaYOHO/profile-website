@@ -1,71 +1,109 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f6f8;
   margin: 0;
-  padding: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+  color: #222;
 }
 
-.profile-card {
-  width: 350px;
-  background: #ffffff;
-  margin: 80px auto;
-  padding: 25px;
+header {
+  background: #4f46e5;
+  color: white;
   text-align: center;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 40px 20px;
 }
 
-.profile-card img {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  border: 3px solid #4f46e5;
+section {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 0 20px;
 }
 
 h2 {
-  margin: 15px 0 5px;
+  margin-bottom: 10px;
+  color: #4f46e5;
 }
 
-.role {
-  color: #555;
-  font-size: 14px;
+.skill {
+  margin-bottom: 15px;
 }
 
-.about {
-  font-size: 14px;
-  color: #666;
+.bar {
+  background: #ddd;
+  height: 8px;
+  border-radius: 5px;
+}
+
+.fill {
+  height: 8px;
+  border-radius: 5px;
+}
+
+.html { width: 85%; background: #f97316; }
+.css { width: 80%; background: #3b82f6; }
+.js { width: 65%; background: #facc15; }
+.git { width: 60%; background: #000; }
+
+.project {
+  background: white;
+  padding: 15px;
   margin: 10px 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
-.skills {
-  margin: 15px 0;
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
 }
 
-.skills span {
-  background: #e0e7ff;
-  color: #1e3a8a;
-  padding: 5px 10px;
-  margin: 5px;
-  border-radius: 20px;
-  font-size: 12px;
-  display: inline-block;
-}
-
-button {
+form button {
   padding: 10px 20px;
-  background-color: #4f46e5;
-  color: #fff;
+  background: #4f46e5;
+  color: white;
   border: none;
-  border-radius: 6px;
   cursor: pointer;
 }
 
-button:hover {
-  background-color: #4338ca;
+#formMsg {
+  margin-top: 10px;
+  font-size: 14px;
 }
 
-#msg {
-  margin-top: 10px;
-  color: green;
-  font-size: 13px;
+.resume {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.resume a {
+  text-decoration: none;
+  background: #22c55e;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+}
+
+#themeToggle {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  padding: 8px 10px;
+  cursor: pointer;
+}
+
+.dark {
+  background: #111;
+  color: #eee;
+}
+
+.dark section h2 {
+  color: #a5b4fc;
+}
+
+.dark header {
+  background: #1e1b4b;
 }
